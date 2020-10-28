@@ -19,11 +19,11 @@
         <div class="container_80">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
+            <a class="navbar-brand fs_28" href="#">START BOOTSTRAP</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span>MENU</span>
               <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand fs_28" href="#">START BOOTSTRAP</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -162,18 +162,27 @@
           <i class="fas fa-star"></i>
           <div class="divider_line border_blue"></div>
           <!-- /intestazione -->
+
           <form>
             <div class="form-group">
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-              <hr>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-              <hr>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
-              <hr>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-              <hr>
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Name">
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="6" placeholder="Message"></textarea>
+            </div>
+
+            <button type="submit" id="button_form" class="btn btn-default btn-lg">Send</button>
           </form>
         </div>
       </section>
@@ -192,16 +201,19 @@
           </div>
           <div class="col-md-12 col-lg-4">
             <h3 class="fw_700">AROUND THE WEB</h3>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-dribbble"></i>
+            <div class="icon mg_30">
+              <a class="footer_icon" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="footer_icon" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="footer_icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="footer_icon" href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+
           </div>
           <div class="col-md-12 col-lg-4">
             <h3 class="fw_700">ABOUT FREELANCER</h3>
             <p>Freelance is a free to use, MIT</p>
             <p>licensed Bootstrap theme created by</p>
-            <a href="#">Start Bootstrap</a>
+            <a class="link_footer" href="#">Start Bootstrap</a>
           </div>
         </div>
       </div>
@@ -209,7 +221,6 @@
       <div class="lower_footer">
         <p>Copyright &copy; Your Website 2020</p>
       </div>
-
     </footer>
     <!-- /footer -->
   </body>

@@ -14,7 +14,7 @@ body{
 }
 .divider_line{
   display: inline-block;
-  width: 120px;
+  width: 11%;
   border: 2px solid white;
   border-radius: 4px;
   vertical-align: super;
@@ -87,6 +87,9 @@ body{
   border: none;
   border-radius: 5px;
   color: white;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #148f77;
 }
 .navbar {
   margin-bottom: 0px;
@@ -189,15 +192,71 @@ main{
   background-color: white;
   border-color: white;
 }
+.btn-default:focus {
+  display: none;
+}
 /* /section about */
 
+/* section contact */
+form{
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  font-size: 20px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 0;
+  margin-bottom: 36px;
+}
+label{
+  display: block;
+}
+.form-group textarea{
+  width: 100%;
+}
+form .btn-default:hover {
+  color: white;
+  background-color: #139279;
+  border-color: #139279;
+}
+#button_form{
+  margin-top: -30px;
+}
+/* /section contact */
 /* /main */
 
 /* footer */
 footer{
   color: white;
   text-align: center;
+  font-size: 18px;
 }
+.footer_icon{
+  color: white;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 15px;
+  margin-right: 10px;
+}
+.footer_icon:hover{
+  background-color: white;
+  color: #2c3e50;
+}
+.link_footer{
+  color: #1abc9c;
+  text-decoration: none;
+}
+.link_footer:hover{
+  color: #117964;
+  text-decoration: underline;
+}
+
 .lower_footer {
   background-color: #1a252f;
 }
@@ -205,4 +264,5 @@ footer{
   margin: 0;
   line-height: 60px;
 }
+
 /* /footer */
